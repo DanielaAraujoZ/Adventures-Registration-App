@@ -1,70 +1,61 @@
-:root {
-  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
-  font-size: 16px;
-  line-height: 24px;
-  font-weight: 400;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
 
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
-}
-
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
+:root{
+    --main-violet :     #5D11BD;
+    --bold-gray:        #373B5C;
+    --regular-gray:     #5B5E6F;
+    --light-gray:       #A6AABF;
+    --background-gray:  #F2F2F2;
+    --color-white:      #F9F9F9;
+    --color-black:      #373B5C;
 }
 
-body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+#root{
+    font-family: 'Poppins', sans-serif;
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+.container-all{
+    background-color: var(--background-gray);
 }
 
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+.container-menu{
+    background-color: var(--color-white);
+    font-size: 17px;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+.option-item-selected, .content-title{
+    color: var(--color-black);
+}
+
+.option-item, .options-logout{
+    color: var(--light-gray);
+}
+
+.content-action-filter > button, .content-item {
+    background-color: var(--color-white);
+}
+
+.content-action-add > button{
+    background-color: var(--main-violet);
+    border-radius: 30px;
+}
+
+.new-adventure{
+    color: var(--color-white);
+}
+
+.adventure-name{
+    color: var(--main-violet);
+}
+
+.info-item-gray{
+    color: var(--regular-gray);
+}
+
+.info-item-dark{
+    color: var(--bold-gray);
 }
