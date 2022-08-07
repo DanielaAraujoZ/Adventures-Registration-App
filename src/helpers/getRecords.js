@@ -4,7 +4,7 @@ export const getRecords = async () => {
 
     try {
         const response = await axios({
-            baseURL: 'https://the-one-api.dev/v2/character?limit=20',
+            baseURL: 'https://the-one-api.dev/v2/character?limit=100',
             headers: {
                 'Authorization': 'Bearer 7w7N9AsIfFT6En__mldx'
             }

@@ -14,3 +14,7 @@
 * Tailwind.
 * Headlessui (Combobox).
 * Plugins: preline and tailwindcss/forms.
+
+
+###### Notes
+> You will have a result limited to 100 characters, whose names are in alphabetical order. However, you can modify the baseURL (limit=number) to get less or more characters.
