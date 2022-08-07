@@ -7,7 +7,11 @@ export const AdventuresTitleSection = ({ data, adventure, setAdventures,characte
         <div className='content-title flex flex-col gap-9'>
             <p className='text-xl font-semibold'>Hi, User</p>
             <div className='flex justify-between h-9'>
-                <DropdownListItems characterFilter={ characterFilter }/>
+                <DropdownListItems
+                    adventure={ adventure }
+                    setAdventures={ setAdventures }
+                    characterFilter={ characterFilter }
+                />
                 <FormSlideOver
                     data={ data }
                     adventure={ adventure }

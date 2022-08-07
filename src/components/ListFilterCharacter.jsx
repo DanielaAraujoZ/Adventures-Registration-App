@@ -1,10 +1,15 @@
 import React from 'react'
 import imageAdventure from '../assets/placeholder.png'
 
-export const ListFilterCharacter = ({ id, characterName, characterRace }) => {
+export const ListFilterCharacter = ({ adventure, setAdventures, id, characterName, characterRace }) => {
+
+    const selectFilter = ( id ) => {
+        let itemFilterById = adventure.filter((item) => item.id === id);
+        setAdventures(itemFilterById)
+    }
 
     return (
-        <button className='option-filter flex gap-2 h-14 mb-3 py-2 px-1 rounded cursor-pointer w-full' >
+        <button className='option-filter flex gap-2 h-14 mb-3 py-2 px-1 rounded cursor-pointer w-full' onClick={() => selectFilter( id )}>
             <img className='h-10 rounded-lg' src={ imageAdventure } alt="image-adventure" />
             <div className='flex flex-col'>
                 <p className='info-item-dark text-base font-medium'>{ characterName }</p>

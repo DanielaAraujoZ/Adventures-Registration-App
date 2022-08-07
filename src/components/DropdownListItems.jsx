@@ -2,7 +2,7 @@ import React from 'react'
 import { ListFilterCharacter } from './ListFilterCharacter'
 import { ListFilterButton } from './ListFilterButton'
 
-export const DropdownListItems = ({ characterFilter }) => {
+export const DropdownListItems = ({ adventure, setAdventures ,characterFilter }) => {
     return (
         <div className='content-action-filter hs-dropdown relative inline-flex h-9'>
             <ListFilterButton />
@@ -10,7 +10,11 @@ export const DropdownListItems = ({ characterFilter }) => {
                 { characterFilter.length === 0
                     ? <p className='text-center font-medium'> No characters. <br/> <span className='font-normal'> Create an adventure </span> </p>
                     : characterFilter.map((item) => (
-                        <ListFilterCharacter { ...item }/>
+                        <ListFilterCharacter
+                            { ...item }
+                            adventure={ adventure }
+                            setAdventures={ setAdventures }
+                        />
                     ))
                 }
             </div>
