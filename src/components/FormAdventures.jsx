@@ -11,7 +11,8 @@ export const FormAdventures = (
         setSelectedCharacter,
         query,
         setQuery,
-        setCharacterFilter
+        setCharacterFilter,
+        setSuccessForm,
     }) => {
 
 
@@ -28,6 +29,8 @@ export const FormAdventures = (
             'characterRace': searchInfoCharacter[0].race
         }
         setAdventures([ ...adventure, infoAdventure ]);
+        setSuccessForm(true);
+        event.target.reset();
     }
 
     useEffect(() => {

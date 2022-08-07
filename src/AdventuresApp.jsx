@@ -18,13 +18,18 @@ function RegistrationApp() {
     setData(dataRecords);
   };
 
+  const resetList = () => {
+    localStorage.clear();
+    setAdventures([])
+  }
+
   useEffect(() => {
     getCharacter();
   }, []);
 
 
   return (
-    <div className='w-full px-4 flex gap-16 container-all h-full'>
+    <div className='w-full px-4 flex gap-16 container-all h-screen'>
       <SideMenu/>
       <div className='container-content basis-4/5 my-16 mr-48 flex flex-col gap-5'>
         <AdventuresTitleSection
@@ -41,6 +46,9 @@ function RegistrationApp() {
             )) :
             <WelcomeMessage />
         }
+        <button type='button' className='button-create w-28 h-9 px-2 text-base' onClick={resetList}>
+          <p className='new-adventure'>Reset list</p>
+        </button>
       </div>
     </div>
   )

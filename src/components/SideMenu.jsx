@@ -12,8 +12,8 @@ export const SideMenu = () => {
         <div className='container-menu basis-1/5 ml-16 my-16 p-4 flex flex-col justify-between rounded-2xl'>
             <div className='options-menu'>
                 <img className='h-14' src={mainLogo} alt='logo-menu' />
-                <div className='options-items flex flex-col mt-12'>
-                    <div className='option-item-selected h-10 flex justify-between items-center font-semibold cursor-pointer'>
+                <div className='flex flex-col mt-12'>
+                    <div className='option-item h-10 flex justify-between items-center font-semibold cursor-pointer'>
                         <div className='flex gap-2.5'>
                             <img src={iconDashboard} className='h-6' alt='icon-dashboard' />
                             <p>Dashboard</p>
@@ -34,7 +34,7 @@ export const SideMenu = () => {
                     </div>
                 </div>
             </div>
-            <div className='options-logout flex justify-between w-4/5 mb-4 font-medium'>
+            <div className='option-item flex justify-between w-4/5 mb-4 font-medium'>
                 <p>Logout</p>
                 <img className='h-6' src={iconLogout} alt='icon-logout' />
             </div>

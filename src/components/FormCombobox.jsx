@@ -18,6 +18,7 @@ export const FormCombobox = ({ selectedCharacter, setSelectedCharacter, query, s
                     className="w-full h-12 py-2 pl-3 pr-10 rounded-lg content-title text-base form-input"
                     onChange={(event) => setQuery(event.target.value)}
                     displayValue={(character) => character.name}
+                    required
                 />
                 <Combobox.Button className="absolute inset-y-0 right-0 pr-2">
                     <img className='w-5' src={iconArrow} alt="arrow-icon" />
