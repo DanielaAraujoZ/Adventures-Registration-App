@@ -9,7 +9,7 @@ import iconLogout from '../assets/Loguot.svg'
 
 export const SideMenu = () => {
     return (
-        <div id="docs-sidebar" className='container-menu hs-sidebar hs-sidebar-open:translate-x-0 mx-0 transition-all duration-300 rounded-none my-0 h-full fixed top-0 left-0 bottom-0 z-[60] hidden lg:basis-1/5 lg:ml-16 lg:my-16 p-4 lg:flex lg:visible lg:flex-col lg:justify-between lg:rounded-2xl lg:static lg:z-[0]'>
+        <div id="docs-sidebar" className='container-menu hs-sidebar hs-sidebar-open:translate-x-0 mx-0 transition-all duration-300 rounded-none my-0 fixed top-0 left-0 bottom-0 z-[60] hidden lg:basis-1/5 lg:ml-16 lg:my-16 p-4 lg:flex lg:visible lg:flex-col lg:justify-between lg:rounded-2xl lg:static lg:z-[0]'>
             <div className='options-menu'>
                 <img className='h-14' src={mainLogo} alt='logo-menu' />
                 <div className='flex flex-col mt-12'>

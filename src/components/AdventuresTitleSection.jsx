@@ -8,8 +8,6 @@ export const AdventuresTitleSection = ({ data, adventure, setAdventures,characte
             <p className='text-xl font-semibold'>Hi, User</p>
             <div className='flex justify-between h-9'>
                 <DropdownListItems
-                    adventure={ adventure }
-                    setAdventures={ setAdventures }
                     characterFilter={ characterFilter }
                 />
                 <FormSlideOver

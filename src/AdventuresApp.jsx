@@ -29,7 +29,7 @@ function RegistrationApp() {
 
 
   return (
-    <div className='w-full px-4 flex gap-16 container-all h-screen'>
+    <div className='w-full px-4 flex gap-16 container-all min-h-screen max-h-max'>
       <button type="button" class=' absolute top-0 mt-4 hover:text-gray-600 lg:hidden' data-hs-sidebar='#docs-sidebar' aria-controls='docs-sidebar' aria-label='Toggle navigation'>
         <span class="sr-only">Toggle Navigation</span>
         <svg class="w-7 h-7" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
@@ -52,8 +52,8 @@ function RegistrationApp() {
             )) :
             <WelcomeMessage />
         }
-        <button type='button' className='button-create w-28 h-9 px-2 text-base' onClick={resetList}>
-          <p className='new-adventure'>Reset list</p>
+        <button type='button' className='button-create w-28 h-9 px-2 text-base flex justify-center items-center' onClick={resetList}>
+          <p className='new-adventure mb-1'>Reset list</p>
         </button>
       </div>
     </div>

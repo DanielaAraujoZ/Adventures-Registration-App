@@ -30,6 +30,9 @@ export const FormAdventures = (
         }
         setAdventures([ ...adventure, infoAdventure ]);
         setSuccessForm(true);
+        setTimeout(() => {
+            setSuccessForm(false)
+        }, 4000);
         event.target.reset();
     }
 
@@ -40,7 +43,7 @@ export const FormAdventures = (
     }, [ adventure ]);
 
     return (
-        <form onSubmit={ createNewAdventure } className='flex flex-col justify-between h-5/6'>
+        <form onSubmit={ createNewAdventure } className='flex flex-col'>
             <FormAdventuresInputs
                 data={ data }
                 selectedCharacter={ selectedCharacter }
@@ -48,7 +51,7 @@ export const FormAdventures = (
                 query={ query }
                 setQuery={ setQuery }
             />
-            <button type="submit" className='button-create h-10'>Create</button>
+            <button type="submit" className='button-create mt-4 h-10'>Create</button>
         </form>
     )
 }

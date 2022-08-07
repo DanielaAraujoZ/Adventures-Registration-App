@@ -2,7 +2,7 @@ import React from 'react'
 import { ListFilterCharacter } from './ListFilterCharacter'
 import { ListFilterButton } from './ListFilterButton'
 
-export const DropdownListItems = ({ adventure, setAdventures ,characterFilter }) => {
+export const DropdownListItems = ({ characterFilter }) => {
     return (
         <div className='content-action-filter hs-dropdown relative inline-flex h-9'>
             <ListFilterButton />
@@ -12,8 +12,6 @@ export const DropdownListItems = ({ adventure, setAdventures ,characterFilter })
                     : characterFilter.map((item) => (
                         <ListFilterCharacter
                             { ...item }
-                            adventure={ adventure }
-                            setAdventures={ setAdventures }
                         />
                     ))
                 }

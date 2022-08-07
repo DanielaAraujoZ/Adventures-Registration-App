@@ -20,7 +20,7 @@ export const FormSlideOver = (
             <button type='button' className='button-create hs-dropdown-toggle w-40 h-9 px-1 py-5 inline-flex justify-center items-center rounded-md text-base' data-hs-offcanvas='#hs-offcanvas-right'>
                 <p className='new-adventure font-semibold'>New adventure</p>
             </button>
-            <div id='hs-offcanvas-right' className='hs-offcanvas hs-offcanvas-open:translate-x-0 translate-x-full fixed top-0 right-0 transition-all duration-300 transform p-7 max-w-md w-full h-full rounded-l-2xl z-[60] bg-white border-l dark:bg-gray-800 dark:border-gray-700' tabIndex='-1'>
+            <div id='hs-offcanvas-right' className='hs-offcanvas hs-offcanvas-open:translate-x-0 translate-x-full fixed top-0 right-0 transition-all duration-300 transform px-7 py-2 max-w-md w-full h-full rounded-l-2xl z-[60] bg-white border-l dark:bg-gray-800 dark:border-gray-700' tabIndex='-1'>
                 {
                     successForm
                     ?
