@@ -30,6 +30,7 @@ html{
 .container-menu{
     background-color: var(--color-white);
     font-size: 17px;
+    height: initial;
 }
 
 .content-title{
