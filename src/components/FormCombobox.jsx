@@ -1,6 +1,6 @@
 import React from 'react'
 import { Combobox } from '@headlessui/react'
-import iconArrow from '../assets/Up arrow.svg'
+import iconArrow from '../assets/Down arrow.svg'
 
 export const FormCombobox = ({ selectedCharacter, setSelectedCharacter, query, setQuery, data }) => {
 
@@ -30,10 +30,10 @@ export const FormCombobox = ({ selectedCharacter, setSelectedCharacter, query, s
                             key={ character.id }
                             value={ character }
                             className='my-1 cursor-pointer option-character p-1 rounded'
-                            >
+                        >
                             <div>
-                            <p className='info-item-dark text-base font-medium'>{ character.name }</p>
-                            <p className='info-item-gray text-xs'> { character.race}</p>
+                                <p className='info-item-dark text-base font-medium'>{ character.name }</p>
+                                <p className='info-item-gray text-xs'> { character.race}</p>
                             </div>
                         </Combobox.Option>
                     ))

@@ -1,7 +1,7 @@
 import React from 'react'
 import imageAdventure from '../assets/placeholder.png'
 
-export const ListCharacterFilter = ({ id, characterName, characterRace }) => {
+export const ListFilterCharacter = ({ id, characterName, characterRace }) => {
 
     return (
         <button className='option-filter flex gap-2 h-14 mb-3 py-2 px-1 rounded cursor-pointer w-full' >
