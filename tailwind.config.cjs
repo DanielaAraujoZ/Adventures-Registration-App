@@ -7,6 +7,7 @@ module.exports = {
     extend: {},
   },
   plugins: [
-    require('preline/plugin')
+    require('preline/plugin'),
+    require('@tailwindcss/forms')
   ],
 }

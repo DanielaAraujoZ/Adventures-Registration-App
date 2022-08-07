@@ -1,1 +1,16 @@
-# Adventurous registration test Frontend IQTHINK
+# Adventures App
+
+> In this project you will be able to create adventures for the Lord of the Rings characters and filter them according to the characters involved.
+
+
+###### Requirements for running the project in your local environment
+* Clone this repository
+* In your terminal : **npm run dev**. This should display **http://localhost:5173** where you will see the app.
+
+
+###### Tools used for development
+* React (Vite).
+* Axios.
+* Tailwind.
+* Headlessui (Combobox).
+* Plugins: preline and tailwindcss/forms.

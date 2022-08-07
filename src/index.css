@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -12,6 +12,7 @@
     --background-gray:  #F2F2F2;
     --color-white:      #F9F9F9;
     --color-black:      #373B5C;
+    --selected-hover:   #EDEDED;
 }
 
 #root{
@@ -39,9 +40,10 @@
     background-color: var(--color-white);
 }
 
-.content-action-add > button{
+.content-action-add > button, .button-create{
     background-color: var(--main-violet);
     border-radius: 30px;
+    color: var(--color-white);
 }
 
 .new-adventure{
@@ -52,10 +54,49 @@
     color: var(--main-violet);
 }
 
-.info-item-gray{
+.info-item-gray, .name-input{
     color: var(--regular-gray);
 }
 
 .info-item-dark{
     color: var(--bold-gray);
+}
+
+.option-filter:hover{
+    background-color: var(--selected-hover);
+}
+
+.title-form{
+    border-bottom: 1px solid var(--light-gray);
+    font-size: 22px;
+    color: var(--bold-gray);
+}
+
+.options-character{
+    background-color: var(--color-white);
+    box-shadow:0px 4px 4px rgba(50, 50, 71, 0.21);
+    overflow-y: scroll;
+}
+
+.options-character::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+}
+
+.options-character::-webkit-scrollbar-thumb {
+    background: var(--main-violet);
+    border-radius: 4px;
+}
+
+.options-character::-webkit-scrollbar-track {
+    background: var(--selected-hover);
+    border-radius: 4px;
+}
+.option-character:hover{
+    background-color: var(--selected-hover);
+}
+
+.welcome-message{
+    background-color: var(--color-white);
+    box-shadow:0px 4px 4px rgba(50, 50, 71, 0.10);
 }
